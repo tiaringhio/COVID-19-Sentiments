@@ -3,7 +3,7 @@ import pandas as pd
 import json
 
 # Reading tweets from JSON file and ading them to Pandas Dataframe
-tweets = pd.read_json('data.json')
+tweets = pd.read_json('JSON\March\data.json')
 
 
 # Deleting duplicate tweets
@@ -38,6 +38,6 @@ tweets.text = tweets.text.apply(lambda x: x.strip())
 # Removing empty tweets
 tweets = tweets[tweets.text != '']
 
-
+# tweets = tweets[['id', 'date', 'hashtags', 'text', 'data']]
 # Saving to CSV
-tweets.to_csv('forEvaluation.csv', columns=['data'])
+tweets.to_csv('./JSON/March/dataCleaned.csv')

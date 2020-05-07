@@ -140,3 +140,11 @@ dmypy.json
 .vscode/
 
 *.json
+
+Analysis/keyword analysis.py
+
+Analysis/polarity and wordclouds.py
+
+Training/cleaning_training.py
+
+Training/training.py
