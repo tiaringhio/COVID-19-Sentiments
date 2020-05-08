@@ -10,7 +10,6 @@ import json
 from datetime import datetime
 from datetime import timedelta
 import time
-import yaml
 
 # Function to remove urls from tweets
 
@@ -47,8 +46,8 @@ def add_to_list():
 
 
 # Date to start from
-dateSince = datetime(2020, 4, 1)
-dateUntil = datetime(2020, 5, 1)
+dateSince = datetime(2020, 1, 1)
+dateUntil = datetime(2020, 2, 1)
 
 # Cycling through days
 for day in range(30):
