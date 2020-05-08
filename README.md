@@ -57,8 +57,8 @@ By cloning this repository it is possibile to find the datasets in the correct f
 
 - The gathered tweets are found in the _JSON_ folder, separated by month
 - The analyzed tweets are found in the _CSV_ folder, separated by month
-- _italian_dataset_ has been used to train the models and can be foundin the _Training Dataset_ folder.
-  - There are subsequent datasets obtain from the original one including:
+- _italian_dataset_ has been used to train the models and can be found in the _Training Dataset_ folder.
+  - There are subsequent datasets obtained from the original one including:
     - tweets_negative
     - tweets_negative
 
@@ -101,9 +101,20 @@ In order to understand the data the following graphs were chosen:
 - Wordcloud
 - Line graph for word frequency through
 
-</br>
-<figure align="center">
-    <img src="Results\march_sentiments.png" alt="Snow" width="300">
-    <img src="Results\january_cloud.png" alt="Forest" width="300">
-    <img src="Results\Keywords\Single\ansia.png" alt="Mountains" width="300">
-</figure>
+### Polarity
+
+<br />
+    <p align="center">
+    <img src="Results\march_sentiments.png"width="500">
+
+### Wordcloud
+
+<br />
+    <p align="center">
+    <img src="Results\january_cloud.png" width="500">
+
+### Line graph
+
+<br />
+    <p align="center">
+    <img src="Results\Keywords\Single\ansia.png" width="500">
