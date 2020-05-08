@@ -17,6 +17,7 @@
   - [Re](#re)
   - [Scikit-learn](#scikit-learn)
   - [Pickle](#pickle)
+- [Datasets](#datasets)
 - [The process](#the-process)
   - [Data gathering](#data-gathering)
   - [Cleaning](#cleaning)
@@ -49,6 +50,17 @@ A python package, used to remove noise from text such as links and punctuation.
 ## Pickle
 
 The pickle module implements binary protocols for serializing and de-serializing a Python object structure. “Pickling” is the process whereby a Python object hierarchy is converted into a byte stream “unpickling” is the inverse operation.
+
+# Datasets
+
+By cloning this repository it is possibile to find the datasets in the correct folders.
+
+- The gathered tweets are found in the _JSON_ folder, separated by month
+- The analyzed tweets are found in the _CSV_ folder, separated by month
+- _italian_dataset_ has been used to train the models and can be foundin the _Training Dataset_ folder.
+  - There are subsequent datasets obtain from the original one including:
+    - tweets_negative
+    - tweets_negative
 
 # The process
 
@@ -91,7 +103,7 @@ In order to understand the data the following graphs were chosen:
 
 </br>
 <figure align="center">
-    <img src="Results\march_sentiments.png" alt="Snow" width="350">
-    <img src="Results\january_cloud.png" alt="Forest" width="350">
-    <img src="Results\Keywords\Single\ansia.png" alt="Mountains" width="350">
+    <img src="Results\march_sentiments.png" alt="Snow" width="300">
+    <img src="Results\january_cloud.png" alt="Forest" width="300">
+    <img src="Results\Keywords\Single\ansia.png" alt="Mountains" width="300">
 </figure>

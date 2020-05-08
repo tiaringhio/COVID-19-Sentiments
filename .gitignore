@@ -123,9 +123,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Datasets
-*.csv
-
 # APIs
 *.yaml
 
@@ -139,12 +136,6 @@ dmypy.json
 *.code-workspace
 .vscode/
 
-*.json
+Training/cleanDataset.csv
 
-Analysis/keyword analysis.py
-
-Analysis/polarity and wordclouds.py
-
-Training/cleaning_training.py
-
-Training/training.py
+Training/newDataset.csv
