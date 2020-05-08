@@ -36,7 +36,7 @@ It is the core of the project, thanks to its many libraries.
 
 ## Pandas
 
-A data manipulation tool, useful for visualizing and manipulating data.
+[Pandas](https://pandas.pydata.org/) A data manipulation tool, useful for visualizing and manipulating data.
 
 ## Re
 
@@ -67,7 +67,7 @@ For the training part a [dataset of italian tweets](https://github.com/charlesma
 - Naive Bayes
 - Logistic Regression
 - Bernoulli Naive Bayes
-- Multinomial Naibe Bayes
+- Multinomial Naive Bayes
 - Stochastic Gradient Descent
 - Support Vector Classification
 - NuSVC
@@ -83,8 +83,15 @@ The results were generally better using the Logistic Regression algorithm. An en
 ## Analysis
 
 The final step: showing the result using plots via Matplotlib.
-In order to undesrstand the data the following graphs were chosen:
+In order to understand the data the following graphs were chosen:
 
-- Polarity
+- Histogram for Polarity
 - Wordcloud
-- Line graph
+- Line graph for word frequency through
+
+</br>
+<figure align="center">
+    <img src="Results\march_sentiments.png" alt="Snow" width="350">
+    <img src="Results\january_cloud.png" alt="Forest" width="350">
+    <img src="Results\Keywords\Single\ansia.png" alt="Mountains" width="350">
+</figure>
