@@ -15,6 +15,8 @@
   - [NLTK](#nltk)
   - [Pandas](#pandas)
   - [Re](#re)
+  - [Preprocessor](#preprocessor)
+  - [Emoji](#emoji)
   - [Scikit-learn](#scikit-learn)
   - [Pickle](#pickle)
 - [Datasets](#datasets)
@@ -42,6 +44,10 @@ It is the core of the project, thanks to its many libraries.
 ## Re
 
 A python package, used to remove noise from text such as links and punctuation.
+
+## Preprocessor
+
+[Library](https://pypi.org/project/tweet-preprocessor/) This library makes it easy to clean, parse or tokenize tweets
 
 ## Scikit-learn
 
@@ -85,12 +91,23 @@ For the training part a [dataset of italian tweets](https://github.com/charlesma
 - NuSVC
 - LinearSVC
 
-The results were generally better using the Logistic Regression algorithm. An ensemble model has also been made which combines the results obtain with the previous ones, improving them by 0.5% as show in the following table.
+The results were generally better using the Logistic Regression algorithm. An ensemble model has also been made which combines the results obtained with the previous ones, improving them by 0.5% as show in the following table.
 
-<p align="center">
-    </br>
-    <img src="Results\algotable.png" >
-</p>
+<center>
+
+|            _Algorithm_            | _Accuracy_ |
+| :-------------------------------: | :--------: |
+|          **Naive Bayes**          |    84%     |
+|      **Logistic Regression**      |    88%     |
+|     **Bernoulli Naive Bayes**     |    85%     |
+|    **Multinomial Naive Bayes**    |   86.5%    |
+|  **Stochastic Gradient Descent**  |   87.25%   |
+| **Support Vector Classification** |   88.1%    |
+|             **NuSVC**             |   87.95%   |
+|           **LinearSVC**           |    86%     |
+|           **Ensemble**            |   88.6%    |
+
+</center>
 
 ## Analysis
 
@@ -99,7 +116,7 @@ In order to understand the data the following graphs were chosen:
 
 - Histogram for Polarity
 - Wordcloud
-- Line graph for word frequency through
+- Line graph for word frequency through time
 
 ### Polarity
 
