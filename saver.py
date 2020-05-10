@@ -5,10 +5,8 @@ import GetOldTweets3 as got
 import itertools
 import collections
 import re
-import networkx
 import json
-from datetime import datetime
-from datetime import timedelta
+from datetime import datetime, timedelta
 import time
 
 # Function to remove urls from tweets
@@ -65,7 +63,7 @@ for day in range(30):
     add_to_list()
     print('--- Writing JSON... ---')
     # Saving list to JSON file
-    json.dump(tweet_list, open('./JSON/April/saver_output.json', 'w'))
+    json.dump(tweet_list, open('./Datasets/JSON/April/saver_output1.json', 'w'))
     print('Total number of tweets: ', len(tweet_list))
     print('--- Going to sleep... ---')
     time.sleep(60*5)

@@ -47,7 +47,7 @@ A python package, used to remove noise from text such as links and punctuation.
 
 ## Preprocessor
 
-[Library](https://pypi.org/project/tweet-preprocessor/) This library makes it easy to clean, parse or tokenize tweets
+[Library](https://pypi.org/project/tweet-preprocessor/) This library makes it easy to clean, parse or tokenize tweets. I has to be installed via cloning and setup.py, pip will give errors.
 
 ## Scikit-learn
 
