@@ -69,8 +69,8 @@ By cloning this repository it is possibile to find the datasets in the correct f
 - The analyzed tweets are found in the _CSV_ folder, separated by month
 - _italian_dataset_ has been used to train the models and can be found in the _Training Dataset_ folder (more about this in the [Machine Learning](#machine-learning) section).
   - There are subsequent datasets obtained from the original one including:
-    - tweets_negative
-    - tweets_negative
+    - negative
+    - negative
 
 # The process
 
