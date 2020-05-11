@@ -23,6 +23,10 @@
 - [The process](#the-process)
   - [Data gathering](#data-gathering)
   - [Cleaning](#cleaning)
+    - [Tokenization](#tokenization)
+    - [Stemming](#stemming)
+    - [Stop words removal](#Stop-words-removal)
+    - [Noise removal](#noise-removal)
   - [Machine Learning](#machine-learning)
   - [Analysis](#analysis)
 
@@ -35,7 +39,7 @@ Sentiment analysis is a type of data mining that measures the inclination of peo
 ## NLTK
 
 [Natural Language Toolkit](https://www.nltk.org/) is extremely helpful for analysing human language data.
-It is the core of the project, thanks to its many libraries.
+It is the core of the project, thanks to its many libraries. More about this powerful tool in the [Cleaning](#cleaning) section
 
 ## Pandas
 
@@ -63,7 +67,7 @@ By cloning this repository it is possibile to find the datasets in the correct f
 
 - The gathered tweets are found in the _JSON_ folder, separated by month
 - The analyzed tweets are found in the _CSV_ folder, separated by month
-- _italian_dataset_ has been used to train the models and can be found in the _Training Dataset_ folder.
+- _italian_dataset_ has been used to train the models and can be found in the _Training Dataset_ folder (more about this in the [Machine Learning](#machine-learning) section).
   - There are subsequent datasets obtained from the original one including:
     - tweets_negative
     - tweets_negative
@@ -76,11 +80,32 @@ The tweets are gathered through a package called [GetOldTweets3](https://github.
 
 ## Cleaning
 
-The most extensive part. The text is stripped from puntctuation, links, tags, excessive spaces ecc. using Re, it is then tokenized and stemmed via NLTK to improve the results obtained in the learning phase, furthermore stop words are removed from text using NLTK's built in library and other stopwords found online, specific for the italian language. This process is done throughout the entirety of the project to better mitigate mistakes.
+The most extensive part. The text is stripped from puntctuation, links, tags, excessive spaces ecc. using Re, it is then tokenized and stemmed via NLTK to improve the results obtained in the learning phase, furthermore stop words are removed from text using NLTK's built in library and other stopwords found online, specific for the italian language. This process is done throughout the entirety of the project to better mitigate mistakes. This phase includes the following steps:
+
+- Tokenization
+- Stemming
+- Stop words removal
+- Noise removal
+
+### Tokenization
+
+The operation by which the text is divided into words, sentences, symbols or other significant elements called tokens. In computational linguistics the token can be defined simply as any sequence of characters delimited by spaces. This process is essential for preparing the text for the learning phase.
+
+### Stemming
+
+The process of reducing the inflected form of a word to its root form, called "stem" which does not necessarily correspond to the morphological root of the word: normally it is sufficient that the related words are mapped to the same stem. Stemming is a part, together with lemmatization, of the text normalization process.
+
+### Stop words removal
+
+Stop words are words that, given their high frequency in a language, are usually considered to be insignificant in a research, for this reason they are removed during the preparation for learning. There is no official list of Italian stop words but terms such as articles, conjunctions, generic words or widespread verbs are included.
+
+### Noise removal
+
+What does NLP noise mean? Noise is a part of the text that does not add meaning or information to the data. Punctuation, links, special characters that usually provide context to the text are included in this category, context is often difficult to process.
 
 ## Machine Learning
 
-For the training part a [dataset of italian tweets](https://github.com/charlesmalafosse/open-dataset-for-sentiment-analysis) has been used, which has been cleaned with the same process as the previously mentioned data. The choice to use this dataset was made because it is extensive and to avoid bias by tagging manually tweets as positive or negative, language is very subjective. After a bit of data preparation, the following models have been trained and pickled:
+For the training part a [dataset of italian tweets](https://github.com/charlesmalafosse/open-dataset-for-sentiment-analysis) has been used, which has been cleaned with the same process as the previously mentioned data. The choice to use this dataset was made because it is extensive and to avoid bias by tagging manually tweets as positive or negative since language is very subjective. After a bit of data preparation, the following models have been trained and _pickled_:
 
 - Naive Bayes
 - Logistic Regression
@@ -111,7 +136,8 @@ The results were generally better using the Logistic Regression algorithm. An en
 
 ## Analysis
 
-The final step: showing the result using plots via Matplotlib.
+The final phase, in which the data downloaded through the models obtained is analyzed. Logistic Regression was chosen as it proved to be the most accurate and consistent. The data was divided by month, each of them was subjected to analysis through the model, the result was then saved as a CSV file.
+The results were shown using plots via Matplotlib.
 In order to understand the data the following graphs were chosen:
 
 - Histogram for Polarity
@@ -135,3 +161,20 @@ In order to understand the data the following graphs were chosen:
 <br />
     <p align="center">
     <img src="Results\Keywords\Single\ansia.png" width="500">
+
+# What's next?
+
+- Data for the months yet to come
+- The models can be further imporoved using deep learning techniques using [Keras](https://keras.io/)
+- Improving the cleaning process
+- Live text classifier
+
+# License
+
+Distributed under the GPL License. See `LICENSE` for more information.
+
+Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+# Contributors
+
+[Mattia Ricci](https://github.com/tiaringhio) - 285237
