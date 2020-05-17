@@ -3,13 +3,14 @@
     <p align="center">
     <img src="https://image.flaticon.com/icons/svg/2904/2904311.svg" alt="Logo" width="130" height="130">
   </a>
-  <h1 align="center">COVID-19 Sentiment Analysis </h1>
+  <h1 align="center">COVID-19 Sentiment Analysis</h1>
   <p align="center">
     This project aims to understand the general sentiments about COVID-19 in Italy.
   </p>
 
 ## Table of contents
 
+- [Table of contents](#table-of-contents)
 - [About the project](#about-the-project)
 - [Used in this project](#used-in-this-project)
   - [NLTK](#nltk)
@@ -29,6 +30,12 @@
     - [Noise removal](#noise-removal)
   - [Machine Learning](#machine-learning)
   - [Analysis](#analysis)
+- [Live classifier](#live-classifier)
+  - [Polarity](#polarity)
+  - [WordCloud](#wordcloud)
+- [What's next?](#what's-next)
+- [License](#license)
+- [Contributors](#contributors)
 
 # About The Project
 
@@ -160,20 +167,25 @@ In order to understand the data the following graphs were chosen:
 
 <br />
     <p align="center">
-    <img src="Results\Keywords\Single\ansia.png" width="500">
+    <img src="Results\Keywords\Single\paura.png" width="500">
+
+# Live classifier
+
+You can try the classifier used in the project with a Telegram bot, it's available [here](t.me/covid_sentiment_bot). [Here](https://github.com/tiaringhio/Sentiment-Analyzer) you can find the code needed to run your own version of the bot along with details about the usage.
 
 # What's next?
 
 - Data for the months yet to come
 - The models can be further imporoved using deep learning techniques using [Keras](https://keras.io/)
 - Improving the cleaning process
-- Live text classifier
+- Addition of english language
+- ~~Live text classifier~~ Can be found [here](#live-classifier)
 
 # License
 
 Distributed under the GPL License. See `LICENSE` for more information.
 
-Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 
 # Contributors
 
