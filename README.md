@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
   <br />
     <p align="center">
-    <img src="https://image.flaticon.com/icons/svg/2904/2904311.svg" alt="Logo" width="130" height="130">
+    <img src="https://cdn-icons.flaticon.com/png/512/3214/premium/3214022.png?token=exp=1638525489~hmac=5ef5a143d988d878181e226ef7b2b460" alt="Logo" width="130" height="130">
   </a>
   <h1 align="center">COVID-19 Sentiment Analysis</h1>
   <p align="center">
